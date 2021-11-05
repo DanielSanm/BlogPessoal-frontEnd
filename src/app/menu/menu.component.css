@@ -1,0 +1,16 @@
+.nav {
+    background-color: #191970;
+}
+
+.nav-link {
+    color: white
+}
+.linkfx:hover {
+    color: rgb(187, 187, 187)
+}
+
+/* button:focus {
+     box-shadow: none;
+    border: none;
+    outline: none;
+} */
