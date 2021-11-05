@@ -1,0 +1,8 @@
+.bg-color {
+    background-color: rgb(199, 199, 250);
+    height: 100vh;
+}
+
+.form-control {
+    width: 350px;
+}
