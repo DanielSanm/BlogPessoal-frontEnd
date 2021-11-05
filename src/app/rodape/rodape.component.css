@@ -1,0 +1,34 @@
+footer {
+    background-color: #191970;
+    color: white;
+}
+
+.redes-sociais {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.redes-sociais li {
+    padding: 10px;
+    
+}
+
+.fa {
+    font-size: 50px;
+    color: white;
+}
+
+.fa-facebook-square:hover {
+    color: #023299;
+}
+
+.fa-instagram:hover {
+    color: #c13584;
+}
+
+.fa-linkedin-square:hover {
+    color: #0072b1;
+}
