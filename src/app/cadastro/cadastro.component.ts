@@ -18,7 +18,7 @@ export class CadastroComponent implements OnInit {
     private router: Router
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     window.scroll(0,0)
   }
 
@@ -29,9 +29,9 @@ export class CadastroComponent implements OnInit {
   cadastrar() {
     if(this.usuario.senha != this.confirmarSenha) {
       
-      alert('As senhas digitadas não são iguais!')
-      // let senhaInvalida = window.document.querySelector('#validacao') as HTMLInputElement
-      // senhaInvalida.value = 'As senhas digitadas não são iguais!'
+      // alert('As senhas digitadas não são iguais!')
+      let senhaInvalida = window.document.querySelector('#validacao') as HTMLInputElement
+      senhaInvalida.innerHTML = 'As senhas digitadas não são iguais!'
   
     } else {
       this.authService.cadastrar(this.usuario).subscribe((resp: Usuario) => {
