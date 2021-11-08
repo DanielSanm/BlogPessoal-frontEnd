@@ -8,7 +8,7 @@
             <form>
                 <div class="form-group">
                     <h1 class="text-center mb-2">Cadastro</h1>
-                    <div id="validacao"></div>
+                    <div id="validacao" class="text-danger text-center font-weight-bold"></div>
                     <label for="nome">Nome completo</label>
                     <input [(ngModel)]='usuario.nome' type="text" class="form-control w-550" id="nome" name="nome"
                         placeholder="Seu nome completo">
@@ -37,8 +37,17 @@
                     <input [(ngModel)]='usuario.senha' type="password" class="form-control w-550" id="confirmSenha" name="confirmSenha"
                         placeholder="Confirme a senha">
                 </div>
+
+                <div class="form-group">
+                    <label for="tipo">Tipo de usuário</label>
+                    <select class="form-control w-550" name="tipo" id="tipo" (change)='tipoUser($event)'>
+                        <option>Selecione um tipo de usuário:</option>
+                        <option value="normal">Normal</option>
+                        <option value="adm">Administrador</option>
+                    </select>
+                </div>
                 
-                <div class="text-center mt-4">
+                <div class="text-center ">
                     <button class="btn btn-info" (click)='cadastrar()'>Cadastrar</button>
                     <button class="btn btn-outline-info ml-3" routerLink="/login">Cancelar</button>
                     

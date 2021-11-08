@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
 import { UsuarioLogin } from '../model/UsuarioLogin';
 import { AuthService } from '../service/auth.service';
 
@@ -25,6 +26,16 @@ export class LoginComponent implements OnInit {
     this.auth.logar(this.usuarioLogin).subscribe((resp: UsuarioLogin) => {
       this.usuarioLogin = resp
 
+    environment.id = this.usuarioLogin.id
+    environment.nome = this.usuarioLogin.nome
+    environment.foto = this.usuarioLogin.foto
+    environment.token = this.usuarioLogin.token
+
+    console.log(environment.id)
+    console.log(environment.nome)
+    console.log(environment.foto)
+    console.log(environment.token)
+    
       this.router.navigate(['/inicio'])
     }, erro => {
       if(erro.status == 500) {
