@@ -1,5 +1,15 @@
-.imagem {
+.bg-img {
     background-image: url(/assets/wallpapersden.com_binary-numbers-raining_1366x768.jpg);
     background-repeat: no-repeat;
     
+}
+
+.mtb {
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 500px;
+    margin-left: 50px;
 }

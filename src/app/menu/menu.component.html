@@ -23,16 +23,16 @@
 
   <div class="col-md-4 d-flex justify-content-end">
 
-    <p class="m-0 d-flex align-items-center font-weight-bold">Nome do usuário</p>
+    <p class="m-0 d-flex align-items-center font-weight-bold">Olá, {{nome}}</p>
     <div class="btn-group">
       <button class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <img class="rounded-circle" src="https://avatars.githubusercontent.com/u/69224429?v=4" alt="foto-usuario"
+        <img src="{{foto}}" class="rounded-circle" alt="foto-usuario"
           width="50">
       </button>
 
       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
         <a class="dropdown-item" href="">Meu perfil</a>
-        <a class="dropdown-item" href="">Sair</a>
+        <a class="dropdown-item" (click)='sair()'>Sair</a>
       </div>
     </div>
 
