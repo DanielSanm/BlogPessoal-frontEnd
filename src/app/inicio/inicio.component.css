@@ -2,6 +2,11 @@
     background-image: url(/assets/wallpapersden.com_binary-numbers-raining_1366x768.jpg);
     background-repeat: no-repeat;
     
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+
+    
 }
 
 .mtb {
